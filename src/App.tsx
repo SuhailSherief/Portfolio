@@ -6,11 +6,6 @@ import { Helmet } from 'react-helmet';
 import SuccessiveType from './components/SuccessiveType';
 import Nav from './components/Nav';
 import Home from './pages/Home';
-import Where from './pages/Where';
-import How from './pages/How';
-import Etc from './pages/Etc';
-import Presence from './pages/Presence';
-import Sakurajima from './pages/Sakurajima';
 import { ChevronsRight } from './components/Icons';
 
 const shouldPlayIntro = window.location.pathname === '/';
@@ -86,11 +81,6 @@ function App() {
             <AnimatePresence>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/where" element={<Where />} />
-                <Route path="/how" element={<How />} />
-                <Route path="/etc" element={<Etc />} />
-                <Route path="/presence" element={<Presence />} />
-                <Route path="/sakuraji.ma" element={<Sakurajima />} />
               </Routes>
             </AnimatePresence>
           </ContentWrapper>
